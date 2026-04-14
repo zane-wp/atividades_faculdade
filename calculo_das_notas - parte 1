@@ -1,0 +1,15 @@
+media_turma = 0
+soma_das_notas = 0
+quantidade_alunos = 0
+nota = 0
+while True:
+    nota = float(input(f"Digite a nota do aluno num {quantidade_alunos + 1} (ou valor negativo para encerrar): "))
+    if nota < 0.0:
+     break
+    soma_das_notas += nota
+    quantidade_alunos += 1 
+if quantidade_alunos > 0 : 
+ media_turma = soma_das_notas/quantidade_alunos
+ print(f"A media da turma foi: {media_turma:.2f}")
+else:
+  print("Nenhuma nota foi inserida")
